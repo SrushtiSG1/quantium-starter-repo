@@ -4,7 +4,19 @@ import pandas as pd
 import plotly.express as px
 
 # Load data
-df = pd.read_csv("data/your_dataset.csv")
+import pandas as pd
+
+file0 = "data/daily_sales_data_0.csv"
+file1 = "data/daily_sales_data_1.csv"
+file2 = "data/daily_sales_data_2.csv"
+
+df1 = pd.read_csv(file0)
+df2 = pd.read_csv(file1)
+df3 = pd.read_csv(file2)
+
+df = pd.concat([df1, df2, df3], ignore_index=True)
+
+print(df.head())
 
 # Create app
 app = dash.Dash(__name__)
