@@ -24,3 +24,6 @@ This project is a Dash-based interactive data visualization tool built using Pyt
 
 ## Output
 Interactive dashboard running on localhost
+
+## Deployed in Ploty Cloud
+https://0d37def5-b99a-42d1-9fc2-a160870bc190.plotly.app/
